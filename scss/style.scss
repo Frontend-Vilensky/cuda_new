@@ -1,8 +1,365 @@
 body {
-   font-size: 40px;
-   background-color: black;
-   color: white;
-   display: flex;
-   justify-content: center;
+   margin: 0;
+   font-family: 'Titillium Web' , 'sans-serif';
 }
 
+/*===============================*Блок Main*=============================*/
+
+.main {
+   background-color: #87509c;
+   min-height: 596px;
+}
+
+
+.container {
+   display: flex;
+   padding: 57px 190px 140px 211px;
+   flex-direction: column;
+
+		&__header {
+         display: flex;
+         justify-content: space-between;
+         margin-bottom: 144px;
+         width: 90%;
+		}
+
+		&__logo {
+         img{
+            width: 100%;
+         }
+		}
+
+		&__menu {
+         li{
+            display: inline-block;
+            list-style: none;
+            margin-left: 10px;
+            padding: 10px 15px 10px 15px;
+            border-radius: 4.5px;
+         }
+         li:first-child{
+            margin-left: 0;
+         }
+         li:hover{
+            background-color: #643a79;
+            border-radius: 4%;
+            transition: 0.3s;
+         }
+		}
+
+		&__menu-link {
+         font-size: 16px;
+         line-height: 18px;
+         font-weight: 400;
+         text-transform: uppercase;
+         color: #ffffff;
+         text-decoration: none;
+		}
+
+		&__content {
+         display: flex;
+         flex-direction: column;
+         width: 100%;
+         justify-content: center;
+         align-items: center;
+         margin: 0 auto;
+         div {
+            font-size: 42.2px;
+            line-height: 48px;
+            font-weight: 700;
+            color: #f7f3ea;
+            text-align: center;
+            margin: 0 auto;
+            margin-bottom: 54px;
+            display: flex;
+         }
+		}
+
+		&__btn {
+         width: 293px;
+         height: 70px;
+         background-color: #eb7d4b;
+         text-transform: uppercase;
+         font-size: 18px;
+         line-height: 26px;
+         font-weight: 600;
+         letter-spacing: 0.02em;
+         color: #ffffff;
+         text-decoration: none;
+         display: flex;
+         border-radius: 4px;
+         align-items: center;
+         justify-content: center;
+         margin: 0 auto;
+         box-shadow: 0px 4px 0.6px #c86a40;
+         &:hover{
+            background-color: #fd9768;
+            transition: 0.3s;
+            box-shadow: 0px 4px 0.6px #fa7d43;
+            
+         }
+         &:active{
+            position: relative;
+            top: 1;
+            box-shadow: 0px 2px 0.6px #fa7d43;
+            background-color: #da5c2e;
+         }
+		}
+}
+/*===============================*Блок Services*=============================*/ 
+
+.services {
+      background-color: #17c2a4;
+      min-height: 500px;
+      width: 100%;
+}
+
+.container-top {
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+         margin-bottom: 80px;
+		&__title {
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         font-size: 40px;
+         line-height: 29px;
+         font-weight: 700;
+         letter-spacing: 0.1em;
+         color: #ffffff;
+         &::after{
+            content: '';
+            display: block;
+            width: 87px;
+            height: 4px;
+            opacity: 0.14;
+            background-color: #000;
+            margin: 21px 0 21px 0;
+            
+         }
+		}
+
+		&__subtitle {
+            font-size: 18px;
+            line-height: 26px;
+            font-weight: 400;
+            letter-spacing: 0.02em;
+            color: #ffffff;
+            text-align: center;
+            width: 603px;
+		}
+}
+
+.container-body{
+   display: flex;
+   justify-content: space-around;
+   
+}
+.container-column {
+      display: flex;
+      flex-direction: column;
+      width: 200px;
+      min-height: 310px;
+      align-items: center;
+      justify-content: center;
+      
+            &__image {
+               margin-bottom:  60px;
+               text-align: center; 
+               height: 130px;
+               pointer-events: none;
+            }
+
+            &__title {
+               font-size: 24px;
+               line-height: 18px;
+               font-weight: 700;
+               text-transform: uppercase;
+               letter-spacing: 0.02em;
+               color: #ffffff;
+               text-align: center;
+               margin-bottom:  25px;
+               height: 40px;
+               overflow: hidden;
+            }
+
+            &__text {
+               font-size: 16px;
+               line-height: 24px;
+               font-weight: 300;
+               letter-spacing: 0.02em;
+               color: #ffffff;
+               text-align: center; 
+               flex: 1 1 auto;
+            }
+      }
+
+/*===============================*Блок Team*=============================*/
+
+.team {
+   background-color: #e7f1f8;
+   min-height: 914px;
+}
+
+.container-top {
+
+		&__title--b {
+         color: #3c4761;
+		}
+
+		&__subtitle--b {
+         color: #3c4761;
+		}
+}
+
+.container-column {
+
+		&__image--circle {
+         width: 200px;
+         height: 200px;
+         background-color: #878787;
+         border-radius: 50%;
+         margin-bottom: 40px;
+		}
+
+
+		&__title--b {
+         color: #3c4761;
+         margin-bottom: 5px;
+         height: 25px;
+		}
+
+		&__subtitle {
+         font-size: 16px;
+         line-height: 18px;
+         font-weight: 400;
+         letter-spacing: 0.02em;
+         color: #30bae7;
+         margin-bottom: 25px;
+		}
+
+		&__text--b {
+         color: #3c4761;
+		}
+
+		&__social {
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         margin-bottom: 15px;
+         min-height: 60px;
+		}
+
+		&__link {
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         border-radius: 50%;
+         background-color: #bdd1df;
+         height: 32px;
+         width: 32px;
+         margin-left: 10px;
+         &:hover{
+            height: 40px;
+            width: 40px;
+            transition: 0.3s;
+            background-color: #a3bed1;
+            margin-right: 10px;
+         }
+         &:last-child:hover{
+            height: 40px;
+            width: 40px;
+            transition: 0.3s;
+            background-color: #a3bed1;
+            margin-left: 10px;
+         }
+		}
+}
+
+/*===============================*Блок Skills*=============================*/
+
+.skills {
+   min-height: 655px;
+   background-color: #ffffff;
+}
+
+.container-column {
+
+
+		&__image--static {
+         width: 160px;
+         height: 160px;
+         background: url(/img/skills/4.png) no-repeat;
+         text-align: center;
+         align-items: center;
+         justify-content: center;
+         display: flex;
+         color: #3c4761;
+         font-size: 48px;
+         margin-bottom: 30px;
+         }
+		}
+      .purple {
+         background: url(/img/skills/3.png) no-repeat;
+      }
+      .green {
+         background: url(/img/skills/2.png) no-repeat;
+      }
+      .orange {
+         background: url(/img/skills/1.png) no-repeat;
+      }
+
+/*===============================*Блок Portfolio*=============================*/
+
+
+
+
+.portfolio {
+   min-height: 1423px;
+   background-color: #ffdd99;
+
+}
+.container__menu--alt{
+margin: 0 auto;
+}
+.container__menu--alt li{
+   width: 84px;
+   height: 38px;
+   background-color: rgba(0,0,0,0.07);
+}
+
+.container__menu--alt li:hover{
+   background-color: #ffffff;
+   
+}
+.container__menu-link--alt {
+   font-family: 'Titillium Web';
+   font-size: 18px;
+   line-height: 19px;
+   font-weight: 400;
+   letter-spacing: 0.02em;
+   color: #393939;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   margin-top: 10px;
+}
+
+.container-body--wrap {
+   display: flex;
+   flex-wrap: wrap;
+   width: 1104px;
+   margin: 0 auto;
+}
+
+
+
+
+/*================================================================*/
+
+.people {
+min-height: 894px;
+background-color: #d74680;
+}

@@ -1,11 +1,440 @@
+@charset "UTF-8";
 body {
+  margin: 0;
+  font-family: 'Titillium Web' , 'sans-serif';
+}
+
+/*===============================*Блок Main*=============================*/
+.main {
+  background-color: #87509c;
+  min-height: 596px;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 57px 190px 140px 211px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.container__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 144px;
+  width: 90%;
+}
+
+.container__logo img {
+  width: 100%;
+}
+
+.container__menu li {
+  display: inline-block;
+  list-style: none;
+  margin-left: 10px;
+  padding: 10px 15px 10px 15px;
+  border-radius: 4.5px;
+}
+
+.container__menu li:first-child {
+  margin-left: 0;
+}
+
+.container__menu li:hover {
+  background-color: #643a79;
+  border-radius: 4%;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.container__menu-link {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.container__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto;
+}
+
+.container__content div {
+  font-size: 42.2px;
+  line-height: 48px;
+  font-weight: 700;
+  color: #f7f3ea;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 54px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.container__btn {
+  width: 293px;
+  height: 70px;
+  background-color: #eb7d4b;
+  text-transform: uppercase;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+  text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 4px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 auto;
+  -webkit-box-shadow: 0px 4px 0.6px #c86a40;
+          box-shadow: 0px 4px 0.6px #c86a40;
+}
+
+.container__btn:hover {
+  background-color: #fd9768;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  -webkit-box-shadow: 0px 4px 0.6px #fa7d43;
+          box-shadow: 0px 4px 0.6px #fa7d43;
+}
+
+.container__btn:active {
+  position: relative;
+  top: 1;
+  -webkit-box-shadow: 0px 2px 0.6px #fa7d43;
+          box-shadow: 0px 2px 0.6px #fa7d43;
+  background-color: #da5c2e;
+}
+
+/*===============================*Блок Services*=============================*/
+.services {
+  background-color: #17c2a4;
+  min-height: 500px;
+  width: 100%;
+}
+
+.container-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 80px;
+}
+
+.container-top__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   font-size: 40px;
-  background-color: black;
-  color: white;
+  line-height: 29px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  color: #ffffff;
+}
+
+.container-top__title::after {
+  content: '';
+  display: block;
+  width: 87px;
+  height: 4px;
+  opacity: 0.14;
+  background-color: #000;
+  margin: 21px 0 21px 0;
+}
+
+.container-top__subtitle {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+  text-align: center;
+  width: 603px;
+}
+
+.container-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.container-column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 200px;
+  min-height: 310px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container-column__image {
+  margin-bottom: 60px;
+  text-align: center;
+  height: 130px;
+  pointer-events: none;
+}
+
+.container-column__title {
+  font-size: 24px;
+  line-height: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: 25px;
+  height: 40px;
+  overflow: hidden;
+}
+
+.container-column__text {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 300;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+  text-align: center;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+}
+
+/*===============================*Блок Team*=============================*/
+.team {
+  background-color: #e7f1f8;
+  min-height: 914px;
+}
+
+.container-top__title--b {
+  color: #3c4761;
+}
+
+.container-top__subtitle--b {
+  color: #3c4761;
+}
+
+.container-column__image--circle {
+  width: 200px;
+  height: 200px;
+  background-color: #878787;
+  border-radius: 50%;
+  margin-bottom: 40px;
+}
+
+.container-column__title--b {
+  color: #3c4761;
+  margin-bottom: 5px;
+  height: 25px;
+}
+
+.container-column__subtitle {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  color: #30bae7;
+  margin-bottom: 25px;
+}
+
+.container-column__text--b {
+  color: #3c4761;
+}
+
+.container-column__social {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 15px;
+  min-height: 60px;
+}
+
+.container-column__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 50%;
+  background-color: #bdd1df;
+  height: 32px;
+  width: 32px;
+  margin-left: 10px;
+}
+
+.container-column__link:hover {
+  height: 40px;
+  width: 40px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  background-color: #a3bed1;
+  margin-right: 10px;
+}
+
+.container-column__link:last-child:hover {
+  height: 40px;
+  width: 40px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  background-color: #a3bed1;
+  margin-left: 10px;
+}
+
+/*===============================*Блок Skills*=============================*/
+.skills {
+  min-height: 655px;
+  background-color: #ffffff;
+}
+
+.container-column__image--static {
+  width: 160px;
+  height: 160px;
+  background: url(/img/skills/4.png) no-repeat;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #3c4761;
+  font-size: 48px;
+  margin-bottom: 30px;
+}
+
+.purple {
+  background: url(/img/skills/3.png) no-repeat;
+}
+
+.green {
+  background: url(/img/skills/2.png) no-repeat;
+}
+
+.orange {
+  background: url(/img/skills/1.png) no-repeat;
+}
+
+/*===============================*Блок Portfolio*=============================*/
+.portfolio {
+  min-height: 1423px;
+  background-color: #ffdd99;
+}
+
+.container__menu--alt {
+  margin: 0 auto;
+}
+
+.container__menu--alt li {
+  width: 84px;
+  height: 38px;
+  background-color: rgba(0, 0, 0, 0.07);
+}
+
+.container__menu--alt li:hover {
+  background-color: #ffffff;
+}
+
+.container__menu-link--alt {
+  font-family: 'Titillium Web';
+  font-size: 18px;
+  line-height: 19px;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  color: #393939;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 10px;
+}
+
+.container-body--wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 1104px;
+  margin: 0 auto;
+}
+
+/*================================================================*/
+.people {
+  min-height: 894px;
+  background-color: #d74680;
 }
