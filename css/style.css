@@ -4,21 +4,40 @@ body {
   font-family: 'Titillium Web' , 'sans-serif';
 }
 
+input::-ms-clear {
+  display: none;
+}
+
 /*===============================*Блок Main*=============================*/
 .main {
   background-color: #87509c;
   min-height: 596px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 57px 190px 140px 211px;
+  padding-top: 57px;
+  padding-left: 211px;
+  padding-right: 197px;
+  padding-bottom: 50px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  width: 100%;
+  margin: 0 auto;
 }
 
 .container__header {
@@ -30,10 +49,15 @@ body {
           justify-content: space-between;
   margin-bottom: 144px;
   width: 90%;
+  margin-left: 100px;
 }
 
 .container__logo img {
   width: 100%;
+}
+
+.container__menu {
+  margin-right: 50px;
 }
 
 .container__menu li {
@@ -141,6 +165,9 @@ body {
 .services {
   background-color: #17c2a4;
   min-height: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   width: 100%;
 }
 
@@ -177,6 +204,7 @@ body {
   font-weight: 700;
   letter-spacing: 0.1em;
   color: #ffffff;
+  text-transform: uppercase;
 }
 
 .container-top__title::after {
@@ -203,8 +231,17 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: -20px;
+  padding-left: 20px;
 }
 
 .container-column {
@@ -220,9 +257,11 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  margin-left: 150px;
+}
+
+.container-column:first-child {
+  margin-left: 0;
 }
 
 .container-column__image {
@@ -261,6 +300,10 @@ body {
 .team {
   background-color: #e7f1f8;
   min-height: 914px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
 }
 
 .container-top__title--b {
@@ -351,6 +394,10 @@ body {
 .skills {
   min-height: 655px;
   background-color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
 }
 
 .container-column__image--static {
@@ -388,6 +435,62 @@ body {
 .portfolio {
   min-height: 1423px;
   background-color: #ffdd99;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+.container-body {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: 60px;
+  -ms-flex-item-align: center;
+      align-self: center;
+}
+
+.container-body__item {
+  width: 600px;
+  margin-left: 10px;
+  padding-left: 10px;
+}
+
+.container-body__item p {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 18px;
+  line-height: 19px;
+  letter-spacing: 0.02em;
+  color: #393939;
+}
+
+.container__btn--green {
+  margin-top: 60px;
+  background-color: #17c2a4;
+  -webkit-box-shadow: 0px 4px 0.6px #0f8f78;
+          box-shadow: 0px 4px 0.6px #0f8f78;
+}
+
+.container__btn--green:hover {
+  background-color: #20debb;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  -webkit-box-shadow: 0px 4px 0.6px #17b799;
+          box-shadow: 0px 4px 0.6px #17b799;
+}
+
+.container__btn--green:active {
+  position: relative;
+  top: 1;
+  -webkit-box-shadow: 0px 2px 0.6px #1aad92;
+          box-shadow: 0px 2px 0.6px #1aad92;
+  background-color: #15a68c;
 }
 
 .container__menu--alt {
@@ -423,18 +526,214 @@ body {
   margin-top: 10px;
 }
 
-.container-body--wrap {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  width: 1104px;
-  margin: 0 auto;
-}
-
-/*================================================================*/
+/*====================Блок People===================*/
 .people {
   min-height: 894px;
   background-color: #d74680;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+.container-body {
+  margin-left: -15px;
+  padding-left: 15px;
+}
+
+.container-body__block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 500px;
+}
+
+.container-body__image {
+  width: 96px;
+  height: 96px;
+  background-color: #787878;
+  border-radius: 50%;
+}
+
+.container-body__column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 340px;
+}
+
+.container-body__text {
+  font-family: 'Titillium Web';
+  font-size: 21px;
+  line-height: 31px;
+  font-weight: 400;
+  font-style: italic;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+  margin-bottom: 28px;
+}
+
+.container-body__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: 'Titillium Web';
+  font-size: 24px;
+  line-height: 26px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.container-body__subtitle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: 'Titillium Web';
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  color: #ffdd99;
+  margin-bottom: 140px;
+}
+
+/*==========================Блок GetIn======================*/
+.getin {
+  background-color: #3c5499;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  min-height: 819px;
+}
+
+.container__btn--blue {
+  background-color: #30bae7;
+  -webkit-box-shadow: 0px 4px 0.6px #2b9ec5;
+          box-shadow: 0px 4px 0.6px #2b9ec5;
+}
+
+.container__btn--blue:hover {
+  background-color: #3bceff;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  -webkit-box-shadow: 0px 4px 0.6px #30bae7;
+          box-shadow: 0px 4px 0.6px #30bae7;
+}
+
+.container__btn--blue:active {
+  position: relative;
+  top: 1;
+  -webkit-box-shadow: 0px 2px 0.6px #1cb1e2;
+          box-shadow: 0px 2px 0.6px #1cb1e2;
+  background-color: #24b4e4;
+}
+
+.container-form {
+  width: 860px;
+  min-height: 283px;
+  margin: 0 auto;
+}
+
+.container-form__input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 27px;
+}
+
+.container-form__input input {
+  width: 414px;
+  height: 56px;
+  background-color: #273a71;
+  color: #fff;
+}
+
+.container-form__text {
+  margin-bottom: 60px;
+}
+
+.container-form__text textarea {
+  width: 860px;
+  height: 200px;
+  background-color: #273a71;
+  color: #fff;
+  resize: vertical;
+}
+
+.container-form ::-webkit-input-placeholder {
+  color: #fff;
+  font-size: 16px;
+  padding-left: 20px;
+  padding-top: 10px;
+}
+
+.container-form :-ms-input-placeholder {
+  color: #fff;
+  font-size: 16px;
+  padding-left: 20px;
+  padding-top: 10px;
+}
+
+.container-form ::-ms-input-placeholder {
+  color: #fff;
+  font-size: 16px;
+  padding-left: 20px;
+  padding-top: 10px;
+}
+
+.container-form ::placeholder {
+  color: #fff;
+  font-size: 16px;
+  padding-left: 20px;
+  padding-top: 10px;
+}
+
+/*=================Footer===============*/
+footer {
+  background-color: #344b8e;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.container-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.container-item__link {
+  font-family: 'Titillium Web';
+  font-size: 24px;
+  line-height: 29px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.container-item__link :first-child {
+  margin-left: 0;
+}
+
+.container-item__link :hover {
+  color: #30bae7;
 }
