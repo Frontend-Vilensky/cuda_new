@@ -230,9 +230,12 @@ input::-ms-clear {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   width: 100%;
 }
 
@@ -534,6 +537,10 @@ input::-ms-clear {
   width: 500px;
 }
 
+.container-body__block:nth-child(even) {
+  margin-left: 118px;
+}
+
 .container-body__image {
   width: 96px;
   height: 96px;
@@ -713,6 +720,6 @@ footer {
   text-decoration: none;
 }
 
-.container-item:hover {
+.container-item__link:hover {
   color: #30bae7;
 }

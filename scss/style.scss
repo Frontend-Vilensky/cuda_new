@@ -175,7 +175,8 @@ input::-ms-clear{display: none;}
 
 .container-body{
    display: flex;
-   justify-content: space-between;
+   align-items: center;
+   justify-content: center;
    width: 100%;
    
 }
@@ -423,6 +424,10 @@ margin: 0 auto;
             display: flex;
             justify-content: space-between;
             width: 500px;
+            
+         }
+         &__block:nth-child(even){
+            margin-left: 118px;
          }
    
          &__image {
@@ -560,7 +565,7 @@ footer {
          color: #ffffff;
          text-decoration: none;
          }
-         &:hover{
+         &__link:hover{
             color: #30bae7;
          }
 		}
